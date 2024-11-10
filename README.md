@@ -25,7 +25,7 @@ Exemplo de configuração no `appsettings.json`:
 O projeto utiliza Data Annotations para aplicar algumas validações e configurações diretamente nas entidades. Além disso, existem atributos personalizados para validações específicas, criados na pasta Validations. Essas regras foram definidas para garantir a integridade dos dados de acordo com as necessidades e especificações do projeto.
 
 ## ⚙️ Estrutura do Projeto
-- **Controllers**: Controlador da API
+- Controllers: Controlador da API
 - **Models**: Definição da entidade
 - **Validations**: Atributos personalizados para validações específicas
 - **Context**: Configurações do contexto do Entity Framework
