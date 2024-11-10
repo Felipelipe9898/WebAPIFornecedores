@@ -13,11 +13,11 @@ Este é um projeto de API RESTful para gerenciar fornecedores, desenvolvido com 
 O projeto utiliza Data Annotations para aplicar algumas validações e configurações diretamente nas entidades. Além disso, existem atributos personalizados para validações específicas, criados na pasta Validations. Essas regras foram definidas para garantir a integridade dos dados de acordo com as necessidades e especificações do projeto.
 
 ## Estrutura do Projeto
-- Controllers Controlador da API
-- **Models** Definição da entidade
-- **Validations** Atributos personalizados para validações específicas
-- **Context** Configurações do contexto do Entity Framework
-- **Repositories** Camada intermediária entre o banco de dados e o restante da aplicação
+- **Controllers**: Controlador da API
+- **Models**: Definição da entidade
+- **Validations**: Atributos personalizados para validações específicas
+- **Context**: Configurações do contexto do Entity Framework
+- **Repositories**: Camada intermediária entre o banco de dados e o restante da aplicação
 
 ## Conexão com o Banco de Dados
 A conexão com o banco de dados MySQL foi configurada no arquivo `appsettings.json`. A string de conexão está localizada na seção `ConnectionStrings`.
