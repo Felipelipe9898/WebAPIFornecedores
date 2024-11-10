@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIFornecedores</name>
+    </assembly>
+    <members>
+        <member name="M:APIFornecedores.Controllers.FornecedoresController.Get">
+            <summary>
+            Retorna todos os fornecedores.
+            </summary>
+            <returns>Uma lista de objetos Fornecedores</returns>
+            <response code="200">Retorna a lista de fornecedores</response>
+            <response code="404">Fornencedores não encontrados</response>
+        </member>
+        <member name="M:APIFornecedores.Controllers.FornecedoresController.Get(System.Int32)">
+            <summary>
+            Retorna um Fornecedor específico pelo seu Id
+            </summary>
+            <param name="id">O identificador único do fornecedor a ser consultado.</param>
+            <returns>Dados do fornecedor.</returns>
+            <response code="200">Retorna o fornecedor</response>
+            <response code="404">Fornecedor não encontrado</response>
+        </member>
+        <member name="M:APIFornecedores.Controllers.FornecedoresController.Post(APIFornecedores.Models.Fornecedor)">
+             <summary>
+             Inclui um novo fornecedor
+             </summary>
+             <remarks>
+             Exemplo de request:
+            
+                 POST api/fornecedores
+                 {
+                   "nome": "Felipe Marciano",
+                   "email": "felipe.marciano@gmail.com",
+                   "telefone": "47996018805",
+                   "cnpJ_CPF": "026.982.440-54",
+                   "nomeFantasia": "Felipe LTDA"
+                 }
+             </remarks> 
+             <param name="fornecedor">Objeto Fornecedor</param>
+             <returns>O fornecedor criado</returns>
+             <response code="200">Retorna o fornecedor criado com sucesso</response>
+             <response code="400">Dados inválidos</response>
+        </member>
+        <member name="M:APIFornecedores.Controllers.FornecedoresController.Put(System.Int32,APIFornecedores.Models.Fornecedor)">
+             <summary>
+             Atualiza os dados de um fornecedor que já existe.
+             </summary>
+             <remarks>
+             Exemplo de request:
+            
+                 PUT api/fornecedores/{id}
+                 {
+                   "id": 1,
+                   "nome": "Felipe Marciano 2",
+                   "email": "felipe.marciano@gmail.com",
+                   "telefone": "47996018805",
+                   "cnpJ_CPF": "026.982.440-54",
+                   "nomeFantasia": "Felipe LTDA"
+                 }
+             </remarks> 
+             <param name="id">ID do fornecedor á ser atualizado.</param>
+             <param name="fornecedor">Dados atualizados do fornecedor.</param>
+             <returns>Fornecedor atualizado.</returns>
+             <response code="200">Retorna o fornecedor atualizado com sucesso</response>
+             <response code="400">Dados inválidos</response>
+             <response code="404">Fornecedor não encontrado</response>
+        </member>
+        <member name="M:APIFornecedores.Controllers.FornecedoresController.Delete(System.Int32)">
+            <summary>
+            Remove um fornecedor pelo ID.
+            </summary>
+            <param name="id">ID do fornecedor que deseja remover.</param>
+            <returns>Fornecedor deletado.</returns>
+            <response code="200">Retorna o fornecedor que foi removido com sucesso</response>
+            <response code="404">Fornecedor não encontrado</response>
+        </member>
+        <member name="T:APIFornecedores.Migrations.Criacao">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Criacao.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Criacao.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Criacao.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:APIFornecedores.Migrations.Alteracao">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Alteracao.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Alteracao.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIFornecedores.Migrations.Alteracao.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
